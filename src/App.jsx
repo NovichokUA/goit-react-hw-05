@@ -2,11 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
 import { Toaster } from "react-hot-toast";
-import { Spiner } from "./components/Spiner/Spiner.jsx";
+import { Spiner } from "./components/spiner/Spiner";
 
 import "./App.css";
 
-const HomePages = lazy(() => import(`./pages/HomePage/HomePage`));
+const HomePages = lazy(() => import("./pages/homePage/HomePage"));
 const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
 const Navigation = lazy(() => import("./components/Navigation/Navigation"));
 const MovieDetailsPage = lazy(() =>

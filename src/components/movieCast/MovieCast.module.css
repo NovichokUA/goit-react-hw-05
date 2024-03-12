@@ -1,0 +1,27 @@
+.img {
+    width: 152px;
+    height: 184px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.castContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 24px;
+    margin-bottom: 20px;
+
+}
+
+.title {
+    width: 152px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: var(--font-small);
+    color: var(--color-dark);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    background-color: #cdc7cd;
+
+}
