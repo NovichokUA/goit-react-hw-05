@@ -1,4 +1,4 @@
-import css from "./MovieList.module.css";
+import css from "./MovieCard.module.css";
 
 const MovieCard = ({ movie }) => {
   const imageUrl = "https://image.tmdb.org/t/p/w500/";
