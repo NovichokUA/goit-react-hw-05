@@ -5,9 +5,10 @@ import { Toaster } from "react-hot-toast";
 import { Spiner } from "./components/spiner/Spiner";
 
 import "./App.css";
-import Navigation from "./components/navigation/Navigation";
+// import Navigation from "./components/navigation/Navigation";
 
 const HomePages = lazy(() => import("./pages/homePage/HomePage"));
+const Navigation = lazy(() => import("./components/navigation/Navigation"));
 // const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
 
 // const MovieDetailsPage = lazy(() =>
