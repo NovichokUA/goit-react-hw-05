@@ -5,20 +5,17 @@ import { Toaster } from "react-hot-toast";
 import { Spiner } from "./components/spiner/Spiner";
 
 import "./App.css";
-import MoviesPage from "./pages/moviesPage/MoviesPage";
-// import Navigation from "./components/navigation/Navigation";
 
 const HomePages = lazy(() => import("./pages/homePage/HomePage"));
 const Navigation = lazy(() => import("./components/navigation/Navigation"));
-// const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
-
-// const MovieDetailsPage = lazy(() =>
-//   import("./pages/MovieDetailsPage/MovieDetailsPage")
-// );
-// const MovieCast = lazy(() => import("./components/MovieCast/MovieCast"));
-// const MovieReviews = lazy(() =>
-//   import("./components/MovieReviews/MovieReviews")
-// );
+const MoviesPage = lazy(() => import("./pages/moviesPage/MoviesPage"));
+const MovieDetailsPage = lazy(() =>
+  import("./pages/movieDetailsPage/MovieDetailsPage")
+);
+const MovieCast = lazy(() => import("./components/movieCast/MovieCast"));
+const MovieReviews = lazy(() =>
+  import("./components/movieReviews/MovieReviews")
+);
 
 function App() {
   return (
@@ -28,11 +25,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePages />} />
           <Route path="/movies" element={<MoviesPage />} />
-          {/* <Route path="/movies" element={<MoviesPage />} />
           <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
             <Route path="cast" element={<MovieCast />} />
-            <Route path="reviews" element={<MovieReviews />} />
-          </Route> */}
+            <Route path="previews" element={<MovieReviews />} />
+          </Route>
         </Routes>
       </Suspense>
       <Toaster />
