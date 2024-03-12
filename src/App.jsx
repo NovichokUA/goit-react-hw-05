@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 import { Spiner } from "./components/spiner/Spiner";
 
 import "./App.css";
-// import Navigation from "./components/Navigation/Navigation";
+import Navigation from "./components/navigation/Navigation";
 
 const HomePages = lazy(() => import("./pages/homePage/HomePage"));
 // const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
@@ -21,6 +21,7 @@ const HomePages = lazy(() => import("./pages/homePage/HomePage"));
 function App() {
   return (
     <>
+      <Navigation />
       <Suspense fallback={<Spiner />}>
         <Routes>
           <Route path="/" element={<HomePages />} />
