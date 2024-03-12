@@ -9,7 +9,7 @@ import "./App.css";
 
 const HomePages = lazy(() => import("./pages/homePage/HomePage"));
 // const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
-const Navigation = lazy(() => import("./components/Navigation/Navigation"));
+
 // const MovieDetailsPage = lazy(() =>
 //   import("./pages/MovieDetailsPage/MovieDetailsPage")
 // );
@@ -21,7 +21,6 @@ const Navigation = lazy(() => import("./components/Navigation/Navigation"));
 function App() {
   return (
     <>
-      <Navigation />
       <Suspense fallback={<Spiner />}>
         <Routes>
           <Route path="/" element={<HomePages />} />
