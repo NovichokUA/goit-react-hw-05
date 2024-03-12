@@ -27,7 +27,7 @@ function App() {
           <Route path="/movies" element={<MoviesPage />} />
           <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
             <Route path="cast" element={<MovieCast />} />
-            <Route path="previews" element={<MovieReviews />} />
+            <Route path="reviews" element={<MovieReviews />} />
           </Route>
         </Routes>
       </Suspense>
