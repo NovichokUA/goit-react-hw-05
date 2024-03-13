@@ -5,8 +5,9 @@ import { Toaster } from "react-hot-toast";
 import { Spiner } from "./components/spiner/Spiner";
 
 import "./App.css";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
-const HomePages = lazy(() => import("./pages/homePage/HomePage"));
+const HomePage = lazy(() => import("./pages/homePage/HomePage"));
 const Navigation = lazy(() => import("./components/navigation/Navigation"));
 const MoviesPage = lazy(() => import("./pages/moviesPage/MoviesPage"));
 const MovieDetailsPage = lazy(() =>
@@ -23,12 +24,13 @@ function App() {
       <Navigation />
       <Suspense fallback={<Spiner />}>
         <Routes>
-          <Route path="/" element={<HomePages />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/movies" element={<MoviesPage />} />
           <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
             <Route path="cast" element={<MovieCast />} />
             <Route path="reviews" element={<MovieReviews />} />
           </Route>
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
       <Toaster />

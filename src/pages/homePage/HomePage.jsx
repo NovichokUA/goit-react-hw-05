@@ -5,7 +5,7 @@ import LoadMoreBtn from "../../components/loadMoreBtn/LoadMoreBtn";
 import { Spiner } from "../../components/spiner/Spiner";
 import ErrorMessage from "../../components/errorMessage/ErrorMessage";
 
-function HomePages() {
+function HomePage() {
   const [movies, setMovies] = useState([]);
   const [page, setPage] = useState(1);
   const [totalPage, setTotalPage] = useState(0);
@@ -48,4 +48,4 @@ function HomePages() {
   );
 }
 
-export default HomePages;
+export default HomePage;
