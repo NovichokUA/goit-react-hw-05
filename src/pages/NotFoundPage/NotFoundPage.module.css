@@ -1,0 +1,21 @@
+.btn {
+
+    margin-bottom: 20px;
+    border: 1px solid rgb(175, 163, 220);
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-size: var(--font-medium);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    box-shadow: 0 4px 4px 0 rgba(124, 77, 255, 0.4), 0 6px 20px 0 rgba(124, 77, 255, 0.3);
+}
+
+.p {
+    color: black;
+    font-size: var(--font-medium);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-align: start;
+}
